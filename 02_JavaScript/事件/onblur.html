@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function fun() {
+            alert("让你别看你还看？")
+        }
+
+        window.onload = function () {
+            var element = document.getElementById("username");
+            element.onblur = function() {
+                alert("别看了，兄弟！")
+            }
+        }
+    </script>
+</head>
+<body>
+<!--    用户名：<input id="username" type="text" onblur="alert('点什么点？')"/>-->
+<!--    密  码：<input id="password" type="password" onblur="fun()"/>-->
+
+    用户名：<input id="username" type="text"/>
+    密  码：<input id="password" type="password" onblur="fun()"/>
+
+</body>
+</html>

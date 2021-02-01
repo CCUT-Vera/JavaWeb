@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--静态注册onload事件-->
+<!--<body onload="alert('静态注册onload事件 ')">-->
+<script type="text/javascript">
+    function onloadfun() {
+        alert(1+9);
+    }
+
+    window.onload = function() {
+        alert("动态注册onload事件");
+    }
+</script>
+<!--<body onload="onload()">-->
+<body>
+
+</body>
+</html>

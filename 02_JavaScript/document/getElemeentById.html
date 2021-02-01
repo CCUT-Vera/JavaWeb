@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+
+
+        function onClickFun() {
+            var user = document.getElementById("username");
+            var value = user.value;
+            var past = /^\w{5,12}$/
+
+            var usernamespan = document.getElementById("usernamespan");
+
+            if (past.test(value)){
+                usernamespan.innerHTML = "用户名合法!";
+            }else {
+                usernamespan.innerHTML = "用户名不合法!";
+            }
+        }
+
+    </script>
+</head>
+<body>
+    用户名：<input type="text" id="username"/>
+    <span id="usernamespan" style="color: red"></span>
+    <button onclick="onClickFun()">按钮</button>
+
+</body>
+</html>

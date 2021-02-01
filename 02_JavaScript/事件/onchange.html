@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+
+        function onchangeFun() {
+            alert("只有孙薇！")
+        }
+
+        window.onload = function() {
+            var id = document.getElementById("sw");
+            id.onchange = function() {
+                alert("只有孙薇！")
+            }
+        }
+
+    </script>
+</head>
+<body>
+<!--    <select onchange="onchangeFun()" id="sw">-->
+<select  id="sw">
+        <option value="1">--女神--</option>
+        <option value="2">--魏薇--</option>
+        <option value="3">--孙薇--</option>
+        <option value="4">--没了--</option>
+    </select>
+
+</body>
+</html>
