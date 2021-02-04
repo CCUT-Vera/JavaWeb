@@ -47,8 +47,8 @@ public class Demo4Test {
             //直接获取标签名的文本内容
             String price = book.elementText("price");
             String author = book.elementText("author");
-
             String sn = book.attributeValue("sn");
+            //封装对象
             Book booksBook1 = new Book(sn,nameText,author,Double.parseDouble(price));
             System.out.println(booksBook1);
         }
