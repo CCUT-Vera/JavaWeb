@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    <?xml version="1.0" encoding="utf-8" ?>
+    以上文件就是xml的声明
+-->
+<books><!--表示多个图书信息-->
+    <book sn="sn12312312312"><!--表示一个图书信息，sn属性表示图书的序列号-->
+        <name>Java</name><!--表示书名-->
+        <author>霍金</author><!--表示作者-->
+        <price>75</price><!--表示图书价格-->
+    </book>
+    <book sn="sn12312312312312"><!--表示一个图书信息，sn属性表示图书的序列号-->
+        <name>Java从入门到放弃</name><!--表示书名-->
+        <author>我</author><!--表示作者-->
+        <price>7</price><!--表示图书价格-->
+    </book>
+    <![CDATA[><撒打算]]>
+
+</books>
